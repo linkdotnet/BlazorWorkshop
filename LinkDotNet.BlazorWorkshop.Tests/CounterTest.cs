@@ -1,7 +1,5 @@
 ﻿using Bunit;
-using Bunit.Rendering;
 using LinkDotNet.BlazorWorkshop.Client.Pages;
-using LinkDotNet.BlazorWorkshop.Client.Shared;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace LinkDotNet.BlazorWorkshop.Tests
