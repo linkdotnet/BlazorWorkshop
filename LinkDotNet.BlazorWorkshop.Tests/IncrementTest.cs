@@ -20,6 +20,7 @@ namespace LinkDotNet.BlazorWorkshop.Tests
             button2.SetInnerText("5");
 
             // Act
+            RenderComponent<Increment>().Find("#calculate").Click();
             var result = RenderComponent<Increment>().Find("#sum").InnerHtml;
 
             // Assert
