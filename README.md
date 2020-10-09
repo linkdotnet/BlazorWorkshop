@@ -5,6 +5,7 @@ Welcome to the Blazor Workshop. In this README you will find all the necessary i
 ## Setup
 What do we need?
 
+ - A working notebook or PC
  - .NET Core 3.1 from [here](https://dotnet.microsoft.com/download/dotnet-core/3.1)
 	 - After installation open a command line and type in the following:
 	 - > dotnet --list-runtimes
