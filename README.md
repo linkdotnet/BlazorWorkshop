@@ -1,6 +1,6 @@
 
-# Blazor Worksop
-Welcome to the Blazor Worksop. In this README you will find all the necessary information to get started.
+# Blazor Workshop
+Welcome to the Blazor Workshop. In this README you will find all the necessary information to get started.
 
 ## Setup
 What do we need?

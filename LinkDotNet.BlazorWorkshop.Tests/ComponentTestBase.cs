@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Components;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TestContext = Bunit.TestContext;
 
-namespace LinkDotNet.BlazorWorksop.Tests
+namespace LinkDotNet.BlazorWorkshop.Tests
 {
     public abstract class ComponentTestBase : ITestContext
     {
