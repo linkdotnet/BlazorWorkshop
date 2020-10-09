@@ -1,15 +1,12 @@
-﻿using Microsoft.AspNetCore.Components;
-
-namespace LinkDotNet.BlazorWorkshop.Client.Shared
+﻿namespace LinkDotNet.BlazorWorkshop.Client.Shared
 {
     public partial class Counter
     {
-        [Parameter]
-        public int CurrentCount { get; set; }
+        private int _currentCount;
 
         private void IncrementCount()
         {
-            CurrentCount++;
+            _currentCount++;
         }
 
         public void Reset()

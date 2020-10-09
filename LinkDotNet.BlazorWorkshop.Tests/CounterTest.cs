@@ -10,35 +10,21 @@ namespace LinkDotNet.BlazorWorkshop.Tests
     public class CounterTest : ComponentTestBase
     {
         [TestMethod]
-        public void GivenCounter_WhenSettingState_ThenCounterShouldStartThere()
+        public void GivenIndexPage_WhenResettingCounter_ThenValueIsZero()
         {
             // Arrange
-            var componentParameter = ComponentParameter.CreateParameter("CurrentCount", 100);
-            var cut = RenderComponent<Counter>(componentParameter);
+            var cut = RenderComponent<Index>();
             cut.SaveSnapshot();
+            cut.Find("#increment-counter").Click();
+            cut.GetChangesSinceSnapshot().ShouldHaveSingleTextChange("Current count: 1");
 
             // Act
-            cut.Find("button").Click();
-
-            // Assert
-            var currentCount = cut.GetChangesSinceSnapshot().ShouldHaveSingleChange();
-            currentCount.ShouldBeTextChange("Current count: 101");
-        }
-
-        [TestMethod]
-        public void GivenCounter_WhenAddingNegativeValues_ThenSetBackToZero()
-        {
-            // Arrange
-            var componentParameter = ComponentParameter.CreateParameter("CurrentCount", -100);
-            var cut = RenderComponent<Counter>(componentParameter);
             cut.SaveSnapshot();
-
-            // Act
-            cut.Find("button").Click();
+            cut.Find("#reset-counter").Click();
+            var diff = cut.GetChangesSinceSnapshot().ShouldHaveSingleChange();
 
             // Assert
-            var currentCount = cut.GetChangesSinceSnapshot().ShouldHaveSingleChange();
-            currentCount.ShouldBeTextChange("Current count: 1");
+            diff.ShouldBeTextChange("Current count: 0");
         }
     }
 }
