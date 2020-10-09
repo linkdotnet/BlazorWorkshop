@@ -1,9 +1,17 @@
 ﻿@page "/"
 
-<h1>Hello, world!</h1>
+<h1>Task 3: Call function on custom component</h1>
+<p>We saw that blazor components can have events where we can pass our eventhandler (like buttons onclick event)</p>
+<p>But sometimes we wanna control the behavior from a component from the parent</p>
+<p>In this task we have the counter from the last task, but this time we also have a reset button which lives in the parent component</p>
+<p>The button should be able to reset the CurrentCount. The component itself offers a Reset method.</p>
+<p>Call the Reset method from the Counter here and implement the reset logic (set value to 0) in the Reset function</p>
+<p>To notify a component that its state has changed you can call <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.components.componentbase.statehaschanged?view=aspnetcore-3.1">StateHasChanged</a></p>
 
-Welcome to your new app.
+<button>Reset Counter to Zero</button>
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+<Counter CurrentCount="100"></Counter>
 
-<Counter></Counter>
+@code {
+    private Counter Counter;
+}
