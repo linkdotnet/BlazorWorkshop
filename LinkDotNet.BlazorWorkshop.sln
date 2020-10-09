@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30517.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkDotNet.BlazorWorkshop.Server", "LinkDotNet.BlazorWorkshop\Server\LinkDotNet.BlazorWorkshop.Server.csproj", "{8C0D31E6-F50A-49FC-B629-221ECE12574A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkDotNet.BlazorWorkshop.Server", "LinkDotNet.BlazorWorkshop\Server\LinkDotNet.BlazorWorkshop.Server.csproj", "{8C0D31E6-F50A-49FC-B629-221ECE12574A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkDotNet.BlazorWorkshop.Client", "LinkDotNet.BlazorWorkshop\Client\LinkDotNet.BlazorWorkshop.Client.csproj", "{EA5B608F-C88E-4507-BB45-6095E57BE827}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkDotNet.BlazorWorkshop.Client", "LinkDotNet.BlazorWorkshop\Client\LinkDotNet.BlazorWorkshop.Client.csproj", "{EA5B608F-C88E-4507-BB45-6095E57BE827}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkDotNet.BlazorWorkshop.Shared", "LinkDotNet.BlazorWorkshop\Shared\LinkDotNet.BlazorWorkshop.Shared.csproj", "{B84BA804-3C4A-49D4-84AC-CEA0C0EEAB62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkDotNet.BlazorWorkshop.Shared", "LinkDotNet.BlazorWorkshop\Shared\LinkDotNet.BlazorWorkshop.Shared.csproj", "{B84BA804-3C4A-49D4-84AC-CEA0C0EEAB62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkDotNet.BlazorWorksop.Tests", "LinkDotNet.BlazorWorksop.Tests\LinkDotNet.BlazorWorksop.Tests.csproj", "{80D63232-CE28-45E4-ACC5-401A3AD5DB9C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{B84BA804-3C4A-49D4-84AC-CEA0C0EEAB62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B84BA804-3C4A-49D4-84AC-CEA0C0EEAB62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B84BA804-3C4A-49D4-84AC-CEA0C0EEAB62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80D63232-CE28-45E4-ACC5-401A3AD5DB9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80D63232-CE28-45E4-ACC5-401A3AD5DB9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80D63232-CE28-45E4-ACC5-401A3AD5DB9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80D63232-CE28-45E4-ACC5-401A3AD5DB9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
