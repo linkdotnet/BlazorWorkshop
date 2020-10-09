@@ -14,17 +14,19 @@ namespace LinkDotNet.BlazorWorkshop.Tests
         public void GivenTwoNumbers_WhenAdding_ThenResultShouldBeShown()
         {
             // Arrange
-            var button1 = RenderComponent<Increment>().Find("#number-1");
-            var button2 = RenderComponent<Increment>().Find("#number-2");
-            button1.SetInnerText("1");
-            button2.SetInnerText("5");
+            var cut = RenderComponent<Increment>();
+            var button1 = cut.Find("#number-1");
+            var button2 = cut.Find("#number-2");
+            button1.Change("1");
+            button2.Change("5");
+            cut.SaveSnapshot();
 
             // Act
-            RenderComponent<Increment>().Find("#calculate").Click();
-            var result = RenderComponent<Increment>().Find("#sum").InnerHtml;
+            cut.Find("button").Click();
+            var diff = cut.GetChangesSinceSnapshot().ShouldHaveSingleChange();
 
             // Assert
-            result.ShouldBe("6");
+            diff.ShouldBeTextChange("6");
         }
     }
 }
