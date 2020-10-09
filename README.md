@@ -14,14 +14,29 @@ What do we need?
 
  - On the same site you will find the Installer for ASP.NET Core 3.1.
  - Make sure you have the latest version of Visual Studio 2019 running (16.7.5 or higher)
+ - You need a `git` client. Please install the latest if you haven't from the [official site](https://git-scm.com/downloads) for your OS
 
 ## Let the fun begin
 Clone this repository and open the LinkDotNet.BlazorWorkshop.sln
 To clone this repo use the following command:
 `git clone https://github.com/linkdotnet/BlazorWorkshop.git`
 
+## Debugging
+This project is setup so you can attach the debugger or directly start with the debugger (aka Server Side Blazor).
+You can reuse the code for client side blazor (it is totally the same) but sometimes lacks the debugging-capability.
+
 ## Tasks
 This workshop has various tasks which are split up to different branches.
 Use your IDE or the git's switch command to switch between branches.
 There is also a Tests project which should get green if the component is correctly implemented.
 Just run `dotnet test` or use your IDE to run the Unit test and see if you could do the task.
+
+### Task 1
+Switch to the following branch: `task/1-add-numbers`.
+For example via git:
+> `git switch task/1-add-numbers`
+
+Or if you use git older than version 2.23
+> `git checkout task/1-add-numbers`
+
+The task will be to add two numbers (prodvided in a text box) and display the result
