@@ -36,7 +36,7 @@ Switch to the following branch: `task/1-add-numbers`.
 For example via git:
 > `git switch task/1-add-numbers`
 
-Or if you use git older than version 2.23
+Or if you use git older than version 2.23 (which you shouldn't :smirk:)
 > `git checkout task/1-add-numbers`
 
 The task will be to add two numbers (prodvided in a text box) and display the result
@@ -46,3 +46,9 @@ Switch to the following branch `task/2-input-parameter`
 > `git switch task/1-add-numbers`
 
 This time you have to extend the given Counter example with a state.
+
+### Task 3
+Switch to the following branch `task/3-ref-parameter`
+> `git switch task/3-ref-parameter`
+
+How do we control Components from the outside world?
