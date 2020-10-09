@@ -24,7 +24,7 @@ To clone this repo use the following command:
 
 ## Debugging
 This project is setup so you can attach the debugger or directly start with the debugger (aka Server Side Blazor).
-You can reuse the code for client side blazor (it is totally the same) but sometimes lacks the debugging-capability.
+You can reuse the code for client side blazor (it is totally the same) but client side blazor lacks some of the debugging-capability.
 
 ## Tasks
 This workshop has various tasks which are split up to different branches.
