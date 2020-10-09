@@ -4,7 +4,7 @@ using LinkDotNet.BlazorWorkshop.Client.Pages;
 using LinkDotNet.BlazorWorkshop.Client.Shared;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace LinkDotNet.BlazorWorksop.Tests
+namespace LinkDotNet.BlazorWorkshop.Tests
 {
     [TestClass]
     public class CounterTest : ComponentTestBase
