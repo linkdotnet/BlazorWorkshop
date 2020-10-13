@@ -1,7 +1,21 @@
 ﻿@page "/"
 
-<h1>Hello, world!</h1>
+<style>
+    .show-animation:hover {
+        content: url("collapse.gif");
+    }
 
-Welcome to your new app.
+    .green-border {
+        border: 2px solid green;
+    }
+</style>
+<h1>Collapse me!</h1>
+<p>In the following there should be a collapsible component: If you click on the Header-text the content gets expanded or collapsed</p>
+<p>Also the header-text should indicate whether the component will be collapsed or expanded on click</p>
+<p>Hover the following image to see how it should work</p>
+<div class="green-border">
+    <img src="collapse.png" class="show-animation"/>
+</div>
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+
+<Collapsible></Collapsible>

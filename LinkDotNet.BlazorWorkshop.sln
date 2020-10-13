@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkDotNet.BlazorWorkshop.C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkDotNet.BlazorWorkshop.Shared", "LinkDotNet.BlazorWorkshop\Shared\LinkDotNet.BlazorWorkshop.Shared.csproj", "{B84BA804-3C4A-49D4-84AC-CEA0C0EEAB62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkDotNet.BlazorWorkshop.Tests", "LinkDotNet.BlazorWorkshop.Tests\LinkDotNet.BlazorWorkshop.Tests.csproj", "{80D63232-CE28-45E4-ACC5-401A3AD5DB9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkDotNet.BlazorWorkshop.Tests", "LinkDotNet.BlazorWorkshop.Tests\LinkDotNet.BlazorWorkshop.Tests.csproj", "{80D63232-CE28-45E4-ACC5-401A3AD5DB9C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
