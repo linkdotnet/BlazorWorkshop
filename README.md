@@ -53,3 +53,9 @@ Switch to the following branch `task/3-ref-parameter`
 > `git switch task/3-ref-parameter`
 
 How do we control Components from the outside world?
+
+### Task 4
+Switch to the following branch `task/4-render-fragment`
+> `git switch task/4-render-fragment`
+
+How do we allow template content?
